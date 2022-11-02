@@ -1,7 +1,7 @@
 import { Contacts } from "./contacts.js";
-import { sephiroth, cloud } from './characterTest.js';
+import { sephiroth, cloud } from './personTest.js';
 
 // Reto 8
 let contacts = new Contacts();
-contacts.characters = [sephiroth, cloud];
-contacts.printCharacters();
+contacts.persons = [sephiroth, cloud];
+contacts.printPersons();

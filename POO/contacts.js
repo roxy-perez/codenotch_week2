@@ -1,14 +1,14 @@
-import { Character } from './character.js';
+import { Person } from './person.js';
 
 // Reto 7
 export class Contacts {
 
     constructor() {
-        this.characters = [new Character()];
+        this.persons = [new Person()];
     }
 
-    printCharacters() {
-        this.characters.forEach(element => {
+    printPersons() {
+        this.persons.forEach(element => {
             console.log(element);
             console.log("***********");
         });

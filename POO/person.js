@@ -1,6 +1,6 @@
 
 // Reto 1 
-export class Character {
+export class Person {
     constructor(name, race, gender, height, weight, hair, eyes, home, yearOfBirth, occupation, hobbies = []) {
         this.name = name;
         this.race = race;
@@ -25,21 +25,21 @@ export class Character {
     // Reto 3
     calcAge(year) {
         let age = Math.abs(this.yearOfBirth - year);
-        return console.log(`Edad del personaje: ${age} en el año ${year}`);
+        return age;
 
     }
 
     // Reto 4
-    printAll(character) {
-        for (const key in character) {
-            console.log(key + " - " + character[key]);
+    printAll(person) {
+        for (const key in person) {
+            console.log(key + " - " + person[key]);
         }
 
     }
 
     // Reto 5
     printHobbies() {
-        return console.log(this.hobbies);
+        return this.hobbies;
     }
 
 }
