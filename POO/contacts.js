@@ -4,15 +4,12 @@ import { Person } from './person.js';
 export class Contacts {
 
     constructor() {
-        this.persons = [new Person()];
+        this.persons = [];
     }
 
     printPersons() {
         this.persons.forEach(element => {
-            console.log(element);
-            console.log("***********");
+            element.printAll();
         });
-        
     }
-
 }
